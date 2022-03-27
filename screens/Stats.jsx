@@ -9,7 +9,7 @@ const StatsScreen = () => {
         <SafeAreaView style={styles.background}>
             <TopBar />
 
-            <Navbar />
+            <Navbar handleNavigate={to => navigation.navigate(to)} />
         </SafeAreaView>
     )
 }

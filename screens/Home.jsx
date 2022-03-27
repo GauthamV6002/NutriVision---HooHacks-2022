@@ -4,11 +4,11 @@ import React from 'react'
 import Navbar from "../components/NavBar/Navbar.jsx";
 import TopBar from "../components/TopBar/TopBar.jsx";
 
-const HomeScreen = () => {
+const HomeScreen = ({ navigation }) => {
     return (
         <SafeAreaView style={styles.background}>
             <TopBar />
-            <Navbar />
+            <Navbar handleNavigate={to => navigation.navigate(to)} />
         </SafeAreaView>
     )
 }

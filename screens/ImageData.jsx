@@ -90,7 +90,7 @@ const ImageDataScreen = () => {
                     <NutrientBar nutrientData={nutrientData} />
                 ))}
             </ScrollView>
-            <Navbar />
+            <Navbar handleNavigate={to => navigation.navigate(to)} />
         </SafeAreaView>
     )
 }

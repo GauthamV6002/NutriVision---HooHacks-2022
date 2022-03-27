@@ -1,14 +1,36 @@
-import { View, Text, StyleSheet, Image } from 'react-native'
-import React from 'react'
+import { View, Text, StyleSheet, Image, TouchableNativeFeedback } from "react-native";
+import React from "react";
 
-export default function Navbar() {
+export default function Navbar({ handleNavigate }) {
     return (
         <View style={styles.navbar}>
-            <Image style={styles.icon} source={require('./images/icon_home.png')} />
-            <Image style={styles.cameraIcon} source={require('./images/icon_camera.png')} />
-            <Image style={styles.icon} source={require('./images/icon_chart.png')} />
+            <TouchableNativeFeedback
+                onPress={() => handleNavigate("Home")}
+            >
+                <Image
+                    style={styles.icon}
+                    source={require("./images/icon_home.png")}
+
+                />
+            </TouchableNativeFeedback>
+            <TouchableNativeFeedback
+                onPress={() => handleNavigate("Nutrient Data")}
+            >
+                <Image
+                    style={styles.cameraIcon}
+                    source={require("./images/icon_camera.png")}
+                />
+            </TouchableNativeFeedback>
+            <TouchableNativeFeedback
+                onPress={() => handleNavigate("Statistics")}
+            >
+                <Image
+                    style={styles.icon}
+                    source={require("./images/icon_chart.png")}
+                />
+            </TouchableNativeFeedback>
         </View>
-    )
+    );
 }
 
 const styles = StyleSheet.create({
@@ -18,18 +40,17 @@ const styles = StyleSheet.create({
         padding: 15,
         paddingHorizontal: 30,
 
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center',
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "space-between",
+        alignItems: "center",
     },
     cameraIcon: {
         width: 65,
-        height: 65
+        height: 65,
     },
     icon: {
         width: 40,
         height: 40,
-    }
-
-})
+    },
+});
