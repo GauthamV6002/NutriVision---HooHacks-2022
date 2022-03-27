@@ -4,7 +4,7 @@ import React from 'react'
 import Navbar from "../components/NavBar/Navbar.jsx";
 import TopBar from "../components/TopBar/TopBar.jsx";
 
-const StatsScreen = () => {
+const StatsScreen = ({ navigation }) => {
     return (
         <SafeAreaView style={styles.background}>
             <TopBar />

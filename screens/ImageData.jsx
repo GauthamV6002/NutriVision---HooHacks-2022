@@ -81,7 +81,7 @@ const NUTRIENT_DATA = [
 
 ]
 
-const ImageDataScreen = () => {
+const ImageDataScreen = ({ navigation }) => {
     return (
         <SafeAreaView style={styles.background}>
             <TopBar />
