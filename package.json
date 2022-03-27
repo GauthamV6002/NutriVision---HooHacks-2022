@@ -14,20 +14,24 @@
     "@react-navigation/native": "^6.0.8",
     "@react-navigation/native-stack": "^6.5.2",
     "expo": "~44.0.0",
+    "expo-camera": "~12.1.2",
     "expo-status-bar": "~1.2.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-native": "0.64.3",
     "react-native-gesture-handler": "~2.1.0",
+    "react-native-mlkit-ocr": "^0.2.3",
     "react-native-reanimated": "~2.3.1",
     "react-native-safe-area-context": "3.3.2",
     "react-native-screens": "~3.10.1",
     "react-native-svg": "12.1.1",
+    "react-native-tesseract-ocr": "^2.0.3",
     "react-native-text-recognition": "^1.0.0",
     "react-native-web": "0.17.1",
     "react-navigation": "^4.4.4",
     "react-navigation-stack": "^2.10.4",
-    "tesseract.js": "^2.1.5"
+    "tesseract.js": "^2.1.5",
+    "expo-image-picker": "~12.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"

@@ -14,7 +14,7 @@ export default function Navbar({ handleNavigate }) {
                 />
             </TouchableNativeFeedback>
             <TouchableNativeFeedback
-                onPress={() => handleNavigate("Nutrient Data")}
+                onPress={() => handleNavigate("Take Image")}
             >
                 <Image
                     style={styles.cameraIcon}

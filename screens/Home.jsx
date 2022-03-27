@@ -17,7 +17,7 @@ export default HomeScreen
 
 const styles = StyleSheet.create({
     background: {
-        backgroundColor: "rgb(42, 42, 42)",
+        backgroundColor: "black",
         display: "flex",
 
         height: "100%",
