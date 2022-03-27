@@ -1,15 +1,24 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, TextInput, SafeAreaView } from "react-native";
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import Navbar from "./components/NavBar/Navbar.jsx";
-import TopBar from "./components/TopBar/TopBar.jsx";
+import HomeScreen from "./screens/Home.jsx"
+import ImageDataScreen from "./screens/ImageData.jsx"
+import StatsScreen from "./screens/Stats.jsx"
+
+
+const Stack = createNativeStackNavigator()
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.background}>
-      <TopBar />
-      <Navbar />
-    </SafeAreaView>
+    <NavigationContainer>
+      <Stack.Navigator>
+        {/* <Stack.Screen name="Nutrient Data" component={ImageDataScreen} /> */}
+        {/* <Stack.Screen name="Home" component={HomeScreen} /> */}
+        <Stack.Screen name="Statistics" component={StatsScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
@@ -23,7 +32,4 @@ const styles = StyleSheet.create({
     alignItems: "center",
 
   },
-  textInput: {
-    borderBottomWidth: 1,
-  }
 });
